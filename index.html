@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pencilon — Advertising Agency based in Malappuram, Kerala. Branding, Digital Marketing and Social Media Creatives that turn ideas into identities." />
+  <meta name="keywords" content="advertising agency, branding, digital marketing, social media, Kerala, Malappuram, pencilon" />
+  <meta name="author" content="Pencilon" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Pencilon — Advertising Agency" />
+  <meta property="og:description" content="We turn ideas into identities. Branding · Digital Marketing · Social Media Creatives." />
+  <meta property="og:image"       content="assets/logo.png" />
+  <meta property="og:type"        content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Pencilon — Advertising Agency" />
+  <meta name="twitter:description" content="We turn ideas into identities." />
+
+  <title>Pencilon — Advertising Agency</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon"      href="assets/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ──────────────────────────────────────────────── -->
+  <div class="cursor-dot"  aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ── PAGE LOADER ─────────────────────────────────────────── -->
+  <div id="page-loader" aria-hidden="true" style="
+    position:fixed;inset:0;background:#080808;z-index:9995;
+    display:flex;align-items:center;justify-content:center;
+    transition:opacity .5s;
+  ">
+    <img src="assets/logo.png" alt="" width="48" height="48"
+      style="border-radius:50%;opacity:0;animation:fadeIn .6s .1s forwards;" />
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="Pencilon home">
+        <img class="nav-logo-img" src="assets/logo.png" alt="Pencilon logo" width="34" height="34" />
+        <span class="nav-logo-text">pencilon</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Start a Project</a>
+
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════════
+         HERO
+         ════════════════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+
+      <!-- Decorative grid -->
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <!-- Big floating letterform -->
+      <div class="hero-letter" aria-hidden="true">P</div>
+
+      <!-- Main content -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+          Advertising Agency &mdash; Malappuram, Kerala
+        </p>
+
+        <h1 class="hero-h1">
+          We Turn
+          <span class="hero-h1-outline">Ideas</span>
+          <span class="hero-h1-light">Into Identities.</span>
+        </h1>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="hero-bar">
+        <p class="hero-desc">
+          <strong>Branding &middot; Digital Marketing &middot; Social Media Creatives.</strong><br>
+          Strategic design and bold campaigns built for brands that mean business.
+        </p>
+        <div class="hero-ctas">
+          <a href="#work"    class="btn btn-primary">View Our Work</a>
+          <a href="#about"   class="btn btn-outline">Who We Are</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span class="hero-scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         TICKER
+         ════════════════════════════════════════════════════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <!-- Two copies for infinite loop -->
+        <span class="ticker-item">Branding</span>
+        <span class="ticker-item">E Posters</span>
+        <span class="ticker-item">Social Media</span>
+        <span class="ticker-item">Brochures</span>
+        <span class="ticker-item">Digital Marketing</span>
+        <span class="ticker-item">Stories</span>
+        <span class="ticker-item">Visual Identity</span>
+        <span class="ticker-item">Campaigns</span>
+        <span class="ticker-item">Reels</span>
+        <span class="ticker-item">Branding</span>
+        <span class="ticker-item">E Posters</span>
+        <span class="ticker-item">Social Media</span>
+        <span class="ticker-item">Brochures</span>
+        <span class="ticker-item">Digital Marketing</span>
+        <span class="ticker-item">Stories</span>
+        <span class="ticker-item">Visual Identity</span>
+        <span class="ticker-item">Campaigns</span>
+        <span class="ticker-item">Reels</span>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         ABOUT
+         ════════════════════════════════════════════════════════ -->
+    <section class="about" id="about" aria-label="About Pencilon">
+      <div class="container">
+        <div class="about-inner">
+
+          <!-- Left -->
+          <div class="about-left">
+            <p class="sec-label reveal">About Pencilon</p>
+            <h2 class="sec-heading about-heading reveal d1">
+              Creative<br>
+              <span class="lt">that</span><br>
+              Converts.
+            </h2>
+
+            <div class="stats-grid reveal d2">
+              <div class="stat-card">
+                <div class="stat-number"
+                     data-count="30"
+                     data-suffix="+">30+</div>
+                <div class="stat-label">Brands Elevated</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number"
+                     data-count="3"
+                     data-suffix="+">3+</div>
+                <div class="stat-label">Years Active</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number"
+                     data-count="3"
+                     data-suffix="×">3×</div>
+                <div class="stat-label">Avg. Engagement Lift</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number"
+                     data-count="6.8"
+                     data-suffix="K">6.8K</div>
+                <div class="stat-label">Monthly Views</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="about-right reveal d2">
+            <div class="about-body">
+              <p>
+                <strong>Pencilon</strong> is a full-service advertising agency
+                based in Malappuram, Kerala — built for brands that refuse to
+                blend in.
+              </p>
+              <p>
+                We craft <strong>brand identities</strong> that define who you
+                are, run <strong>digital campaigns</strong> that reach the right
+                people, and produce <strong>social media creatives</strong> —
+                brochures, e-posters, stories and reels — that make people stop
+                scrolling.
+              </p>
+              <p>
+                Every pixel is placed with purpose. Every idea starts with a
+                pencil — and that pencil is always on.
+              </p>
+            </div>
+
+            <div class="about-tags">
+              <span class="about-tag">Branding</span>
+              <span class="about-tag">E Posters</span>
+              <span class="about-tag">Brochures</span>
+              <span class="about-tag">Digital Marketing</span>
+              <span class="about-tag">Stories</span>
+              <span class="about-tag">Reels</span>
+              <span class="about-tag">Visual Identity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         SERVICES
+         ════════════════════════════════════════════════════════ -->
+    <section class="services" id="services" aria-label="Our Services">
+      <div class="container">
+
+        <div class="services-header reveal">
+          <div>
+            <p class="sec-label">What We Do</p>
+            <h2 class="sec-heading">
+              Our<br>
+              <span class="lt">Services</span>
+            </h2>
+          </div>
+          <a href="#contact" class="btn btn-text">See All Services &rarr;</a>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1 -->
+          <article class="service-card reveal" aria-label="Branding and Identity">
+            <div class="service-card-inner">
+              <span class="service-number">01</span>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <span class="service-icon">&#9632;</span>
+              </div>
+              <h3 class="service-title">Branding &amp; Identity</h3>
+              <p class="service-desc">
+                We build brand systems from the ground up — naming, logo design,
+                colour systems, typography and tone of voice that make you
+                unmistakably you.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag">Logo Design</span>
+                <span class="service-tag">Guidelines</span>
+                <span class="service-tag">Typography</span>
+                <span class="service-tag">Naming</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card reveal d1" aria-label="Digital Marketing">
+            <div class="service-card-inner">
+              <span class="service-number">02</span>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <span class="service-icon">&#9672;</span>
+              </div>
+              <h3 class="service-title">Digital Marketing</h3>
+              <p class="service-desc">
+                Data-driven campaigns across Meta, Google and every channel that
+                matters — reaching the right audience at exactly the right moment
+                for maximum impact.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag">Meta Ads</span>
+                <span class="service-tag">Google Ads</span>
+                <span class="service-tag">SEO</span>
+                <span class="service-tag">Email</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card reveal d2" aria-label="Social Media Creatives">
+            <div class="service-card-inner">
+              <span class="service-number">03</span>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <span class="service-icon">&#9635;</span>
+              </div>
+              <h3 class="service-title">Social Media Creatives</h3>
+              <p class="service-desc">
+                Scroll-stopping e-posters, brochures, stories and reels crafted
+                to grow your community and convert followers into loyal,
+                repeat customers.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag">E Posters</span>
+                <span class="service-tag">Brochures</span>
+                <span class="service-tag">Stories</span>
+                <span class="service-tag">Reels</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         WORK
+         ════════════════════════════════════════════════════════ -->
+    <section class="work" id="work" aria-label="Selected Work">
+      <div class="container">
+
+        <div class="work-header">
+          <div>
+            <p class="sec-label reveal">Selected Work</p>
+            <h2 class="sec-heading reveal d1">
+              Recent<br>
+              <span class="lt">Projects</span>
+            </h2>
+          </div>
+          <a href="#contact" class="btn btn-outline reveal d2" style="white-space:nowrap">
+            See All &rarr;
+          </a>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- Featured project -->
+          <article class="work-card reveal" aria-label="Union Inauguration — Event Branding">
+            <div class="work-card-pattern" aria-hidden="true"></div>
+            <img class="work-card-logo" src="assets/logo.png" alt="" aria-hidden="true" />
+            <div class="work-card-info">
+              <p class="work-card-cat">Branding &middot; Event</p>
+              <h3 class="work-card-title">
+                Union Inauguration<br>Event Branding &amp; Tariff Card
+              </h3>
+              <div class="work-card-meta">
+                <span class="work-card-year">2024</span>
+                <div class="work-card-arrow" aria-hidden="true">&#8599;</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="work-card reveal d1" aria-label="Placementor — Hiring Campaign">
+            <div class="work-card-pattern" aria-hidden="true"></div>
+            <img class="work-card-logo" src="assets/logo.png" alt="" aria-hidden="true" />
+            <div class="work-card-info">
+              <p class="work-card-cat">E Poster &middot; Digital</p>
+              <h3 class="work-card-title">Placementor &mdash;<br>Hiring Campaign</h3>
+              <div class="work-card-meta">
+                <span class="work-card-year">2024</span>
+                <div class="work-card-arrow" aria-hidden="true">&#8599;</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="work-card reveal d2" aria-label="Zeitgeist — Event Poster Series">
+            <div class="work-card-pattern" aria-hidden="true"></div>
+            <img class="work-card-logo" src="assets/logo.png" alt="" aria-hidden="true" />
+            <div class="work-card-info">
+              <p class="work-card-cat">Social Media &middot; Event</p>
+              <h3 class="work-card-title">Zeitgeist &mdash;<br>Event Poster Series</h3>
+              <div class="work-card-meta">
+                <span class="work-card-year">2024</span>
+                <div class="work-card-arrow" aria-hidden="true">&#8599;</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         PROCESS
+         ════════════════════════════════════════════════════════ -->
+    <section class="process" id="process" aria-label="Our Process">
+      <div class="container">
+
+        <p class="sec-label reveal">How We Work</p>
+        <h2 class="sec-heading reveal d1">
+          Our <span class="lt">Process</span>
+        </h2>
+
+        <ol class="process-list" aria-label="Four-step process">
+
+          <li class="process-item reveal">
+            <div class="process-num" aria-hidden="true">01</div>
+            <div class="process-body">
+              <h3 class="process-title">Discover</h3>
+              <p class="process-desc">
+                We dig deep into your brand, audience and competitors to find
+                exactly where the real opportunity lives.
+              </p>
+            </div>
+            <div class="process-tag" aria-label="Phase: Research and Audit">
+              Research &amp; Audit
+            </div>
+          </li>
+
+          <li class="process-item reveal d1">
+            <div class="process-num" aria-hidden="true">02</div>
+            <div class="process-body">
+              <h3 class="process-title">Strategise</h3>
+              <p class="process-desc">
+                We build a bespoke creative strategy — messaging, channels and
+                visual direction that align with your goals and target audience.
+              </p>
+            </div>
+            <div class="process-tag" aria-label="Phase: Strategy and Planning">
+              Strategy &amp; Planning
+            </div>
+          </li>
+
+          <li class="process-item reveal d2">
+            <div class="process-num" aria-hidden="true">03</div>
+            <div class="process-body">
+              <h3 class="process-title">Create</h3>
+              <p class="process-desc">
+                Our designers and copywriters bring ideas to life — posters,
+                brochures, reels and campaigns that demand attention.
+              </p>
+            </div>
+            <div class="process-tag" aria-label="Phase: Design and Production">
+              Design &amp; Production
+            </div>
+          </li>
+
+          <li class="process-item reveal d3">
+            <div class="process-num" aria-hidden="true">04</div>
+            <div class="process-body">
+              <h3 class="process-title">Launch &amp; Grow</h3>
+              <p class="process-desc">
+                We deploy, track and continuously optimise — so your brand keeps
+                growing long after go-live.
+              </p>
+            </div>
+            <div class="process-tag" aria-label="Phase: Execution and Analytics">
+              Execution &amp; Analytics
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         TESTIMONIAL
+         ════════════════════════════════════════════════════════ -->
+    <section class="testimonial" aria-label="Client testimonial">
+      <div class="testimonial-bg-quote" aria-hidden="true">&ldquo;</div>
+      <div class="container">
+        <div class="testimonial-inner reveal">
+          <img
+            class="testimonial-logo"
+            src="assets/logo.png"
+            alt="Pencilon"
+            width="44"
+            height="44"
+          />
+          <blockquote>
+            <p class="testimonial-text">
+              Pencilon didn&rsquo;t just design our creatives &mdash;
+              they <strong>redefined how people see our brand.</strong>
+              Every post feels intentional, every campaign delivers results.
+            </p>
+            <footer class="testimonial-author">
+              &mdash; <b>Aarav Menon</b>, Founder &middot; Bloom Skincare
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         CTA
+         ════════════════════════════════════════════════════════ -->
+    <section class="cta-section" id="contact" aria-label="Contact us">
+      <div class="container">
+        <div class="cta-inner">
+
+          <h2 class="cta-headline reveal">
+            Let&rsquo;s
+            <span class="cta-headline-light">Build</span>
+            <span class="cta-headline-outline">Something.</span>
+          </h2>
+
+          <div class="cta-right reveal d1">
+            <p>
+              Have a project in mind? Drop us a message and let&rsquo;s create
+              something worth remembering together.
+            </p>
+            <a href="mailto:pencilon.graphy@gmail.com">
+              Get In Touch &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="Pencilon home">
+            <img class="nav-logo-img" src="assets/logo.png" alt="Pencilon" width="34" height="34" />
+            <span class="nav-logo-text">pencilon</span>
+          </a>
+          <p>
+            Advertising agency crafting brands, campaigns &amp; creatives
+            that leave a mark. Malappuram, Kerala, India.
+          </p>
+        </div>
+
+        <!-- Services -->
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Branding</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#services">E Posters</a></li>
+            <li><a href="#services">Brochures</a></li>
+            <li><a href="#services">Stories &amp; Reels</a></li>
+          </ul>
+        </nav>
+
+        <!-- Company -->
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li>
+              <a href="mailto:pencilon.graphy@gmail.com">
+                pencilon.graphy@gmail.com
+              </a>
+            </li>
+            <li><a href="#contact">Malappuram, Kerala</a></li>
+            <li>
+              <a
+                href="https://instagram.com/pencilon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >@pencilon</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="year">2025</span> Pencilon. All rights reserved.
+        </p>
+        <div class="footer-socials">
+          <a
+            href="https://instagram.com/pencilon"
+            class="social-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >IG</a>
+          <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">LI</a>
+          <a href="#" class="social-btn" aria-label="Behance">BE</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ──────────────────────────────────────────────── -->
+  <script src="js/main.js"></script>
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
