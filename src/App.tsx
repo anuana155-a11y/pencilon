@@ -94,7 +94,7 @@ export default function App() {
               >
                 <a 
                   href={`#${item.toLowerCase()}`}
-                  className="text-[11px] uppercase tracking-[0.15em] font-bold text-white/40 hover:text-brand-accent transition-colors"
+                  className="text-xs uppercase tracking-[0.18em] font-bold text-white/40 hover:text-brand-accent transition-colors"
                 >
                   {item}
                 </a>
@@ -106,7 +106,7 @@ export default function App() {
             <motion.button 
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="hidden sm:block px-6 py-2 border border-white/20 text-[10px] uppercase tracking-[0.2em] font-black hover:bg-brand-accent hover:border-brand-accent hover:text-black transition-all"
+              className="hidden sm:block px-8 py-3 border border-white/20 text-xs uppercase tracking-[0.2em] font-black hover:bg-brand-accent hover:border-brand-accent hover:text-black transition-all"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
@@ -118,10 +118,10 @@ export default function App() {
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="md:hidden text-white hover:text-brand-accent transition-colors p-2"
+              className="md:hidden text-white hover:text-brand-accent transition-colors p-4 -mr-4"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {mobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
             </motion.button>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function App() {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed inset-0 z-[85] bg-brand-black flex flex-col items-center justify-center p-12 md:hidden"
           >
-            <ul className="space-y-8 text-center">
+            <ul className="space-y-12 text-center">
               {NAV_ITEMS.map((item, i) => (
                 <motion.li
                   key={item}
@@ -147,10 +147,10 @@ export default function App() {
                 >
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="font-display text-5xl font-black uppercase tracking-tighter hover:text-brand-accent transition-colors block"
+                    className="font-display text-4xl font-black uppercase tracking-[-0.04em] hover:text-brand-accent transition-colors block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {item}
+                    {item}.
                   </a>
                 </motion.li>
               ))}
@@ -161,10 +161,10 @@ export default function App() {
               >
                 <a
                   href="#contact"
-                  className="font-display text-5xl font-black uppercase tracking-tighter text-brand-accent block"
+                  className="font-display text-4xl font-black uppercase tracking-[-0.04em] text-brand-accent block"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Contact
+                  Contact.
                 </a>
               </motion.li>
             </ul>
@@ -225,7 +225,7 @@ export default function App() {
               ) : (
                 <form className="space-y-10 md:space-y-12" onSubmit={handleSubmit}>
                   <div className="group relative">
-                    <label className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors">
+                    <label className="text-xs font-black tracking-[0.25em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors block mb-2">
                       Full Name
                     </label>
                     <input 
@@ -238,7 +238,7 @@ export default function App() {
                   </div>
 
                   <div className="group relative">
-                    <label className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors">
+                    <label className="text-xs font-black tracking-[0.25em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors block mb-2">
                       Email Address
                     </label>
                     <input 
@@ -251,7 +251,7 @@ export default function App() {
                   </div>
 
                   <div className="group relative">
-                    <label className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors">
+                    <label className="text-xs font-black tracking-[0.25em] text-white/30 uppercase group-focus-within:text-brand-accent transition-colors block mb-2">
                       Message
                     </label>
                     <textarea 

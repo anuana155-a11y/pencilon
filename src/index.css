@@ -19,6 +19,10 @@
     font-family: var(--font-sans);
   }
 
+  html {
+    scroll-padding-top: 100px;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-[-0.04em] font-extrabold leading-[0.9];
   }

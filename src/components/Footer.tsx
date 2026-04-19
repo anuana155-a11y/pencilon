@@ -19,7 +19,7 @@ export default function Footer() {
                 href="mailto:pencilon.graphy@gmail.com" 
                 className="group flex flex-col gap-1 hover:text-brand-accent transition-colors"
               >
-                <span className="text-[10px] font-bold tracking-[0.2em] text-white/40">Email</span>
+                <span className="text-xs font-bold tracking-[0.2em] text-white/40">Email</span>
                 <span className="font-display text-xl md:text-2xl font-black tracking-tighter">pencilon.graphy@gmail.com</span>
               </a>
               <a 
@@ -27,7 +27,7 @@ export default function Footer() {
                 target="_blank"
                 className="group flex flex-col gap-1 hover:text-brand-accent transition-colors"
               >
-                <span className="text-[10px] font-bold tracking-[0.2em] text-white/40">Instagram</span>
+                <span className="text-xs font-bold tracking-[0.2em] text-white/40">Instagram</span>
                 <span className="font-display text-xl md:text-2xl font-black tracking-tighter">@pencilon</span>
               </a>
             </div>
@@ -56,12 +56,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-8">
           <div className="flex items-center gap-4">
             <Logo className="h-10 w-10" />
             <div className="font-display font-black text-2xl tracking-[0.15em]">PENCILON.</div>
           </div>
-          <p className="font-sans text-[10px] font-bold tracking-[0.2em] text-white/20 text-center md:text-right">
+          <p className="font-sans text-xs font-bold tracking-[0.2em] text-white/20 text-center md:text-right">
             © 2026 PENCILON CREATIVE. <br />
             BUILT FOR THE FRONTIER.
           </p>
